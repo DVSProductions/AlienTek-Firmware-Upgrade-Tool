@@ -9,13 +9,19 @@ The AlienTek Firmware Upgrade Tool is a .NET 9 application designed to facilitat
 - Automatic detection of connected devices
 - Verification of firmware integrity before installation
 - Detailed logging of upgrade process
+- Supports English, German and Chinese
+## Screenshots
+![mainpage](https://github.com/user-attachments/assets/d7fda8ea-0726-4c68-9d34-ce05dcd20e27)
+![flashing](https://github.com/user-attachments/assets/3615f546-f99d-4843-8daa-1036200296a5)
+![success](https://github.com/user-attachments/assets/cbd08243-45a3-4928-bd52-2cac6060b19f)
+
 
 ## Requirements
 - .NET 9 SDK
 - Windows 10 or later
 - USB connection to AlienTek device
 
-## How To use it:
+## How To use
 1. Download the Latest release from the release section
 2. Run the Program and 
 
