@@ -1,0 +1,9 @@
+namespace USB_HID;
+
+internal enum DIGCF {
+	DEFAULT = 1,
+	PRESENT = 2,
+	ALLCLASSES = 4,
+	PROFILE = 8,
+	DEVICEINTERFACE = 0x10
+}

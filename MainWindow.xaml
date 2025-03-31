@@ -1,0 +1,138 @@
+﻿<Window
+	x:Class="AlienTek_Firmware_Upgrade_Tool.MainWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:local="clr-namespace:AlienTek_Firmware_Upgrade_Tool"
+	xmlns:pages="clr-namespace:AlienTek_Firmware_Upgrade_Tool.Pages"
+	mc:Ignorable="d"
+	x:ClassModifier="internal"
+	Title="{x:Static local:UI.WindowTitle}"
+	Height="450"
+	Background="{DynamicResource BGColor}"
+	ResizeMode="NoResize"
+	Closing="Window_Closing"
+	Foreground="White"
+	Width="400">
+	<Grid>
+		<Grid
+			x:Name="NavigationGrid">
+			<Grid.RowDefinitions>
+				<RowDefinition
+					Height="Auto" />
+				<RowDefinition />
+			</Grid.RowDefinitions>
+			<Grid
+				Background="#20000000">
+				<Button
+					x:Name="btBack"
+					Margin="0,1"
+					HorizontalAlignment="Left"
+					Content="{x:Static local:UI.BackBtn}"
+					Click="Button_Click_2" />
+				<Button
+					Content="{x:Static local:UI.btAbout}"
+					HorizontalAlignment="Right"
+					Click="Button_Click_3" />
+			</Grid>
+			<Frame
+				Grid.Row="1"
+				Navigated="ContentFrame_Navigated"
+				NavigationUIVisibility="Hidden"
+				Navigating="ContentFrame_Navigating"
+				x:Name="contentFrame">
+				<Frame.Content>
+					<!--<local:DeviceSelector />-->
+					<pages:Page1 />
+				</Frame.Content>
+			</Frame>
+		</Grid>
+		<Grid
+			Visibility="Collapsed"
+			d:Visibility="Collapsed"
+			Background="#7F3C3C3C"
+			Name="FinishOverlay">
+			<Grid
+				x:Name="OnSuccess"
+				VerticalAlignment="Center">
+				<Grid.RowDefinitions>
+					<RowDefinition
+						Height="auto" />
+					<RowDefinition
+						Height="auto" />
+					<RowDefinition
+						Height="Auto" />
+				</Grid.RowDefinitions>
+				<Label
+					Content="✔"
+					FontSize="100"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Center"
+					Foreground="#FF24E330" />
+				<Label
+					Grid.Row="1"
+					Content="{x:Static local:UI.UpgradeSuccessful}"
+					FontSize="20"
+					HorizontalAlignment="Center" />
+				<Button
+					Grid.Row="2"
+					Padding="5"
+					HorizontalAlignment="Center"
+					Content="{x:Static local:UI.btStartOver}"
+					Click="Button_Click" />
+			</Grid>
+			<Grid
+				x:Name="OnFail"
+				VerticalAlignment="Center"
+				d:Visibility="Collapsed">
+				<Grid.RowDefinitions>
+					<RowDefinition
+						Height="auto" />
+					<RowDefinition
+						Height="auto" />
+					<RowDefinition
+						Height="Auto" />
+				</Grid.RowDefinitions>
+				<Label
+					Content="✖"
+					FontSize="100"
+					Foreground="#FFE32424"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Center" />
+				<Label
+					Grid.Row="1"
+					Content="{x:Static local:UI.UpgradeFailed}"
+					FontSize="20"
+					HorizontalAlignment="Center" />
+				<Grid
+					Grid.IsSharedSizeScope="True"
+					Grid.Row="2">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition />
+						<ColumnDefinition
+							SharedSizeGroup="A"
+							Width="Auto" />
+						<ColumnDefinition
+							Width="20" />
+						<ColumnDefinition
+							SharedSizeGroup="A"
+							Width="Auto" />
+						<ColumnDefinition />
+					</Grid.ColumnDefinitions>
+					<Button
+						Grid.Column="1"
+						Padding="5"
+						Content="{x:Static local:UI.btRetry}"
+						Click="Button_Click_1" />
+					<Button
+						Grid.Column="3"
+						Padding="5"
+						Content="{x:Static local:UI.btStartOver}"
+						Click="Button_Click" />
+
+				</Grid>
+			</Grid>
+		</Grid>
+	</Grid>
+</Window>

@@ -1,0 +1,51 @@
+﻿<Page
+	x:Class="AlienTek_Firmware_Upgrade_Tool.Pages.Page1"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:local="clr-namespace:AlienTek_Firmware_Upgrade_Tool.Pages"
+	xmlns:ui="clr-namespace:AlienTek_Firmware_Upgrade_Tool"
+	x:ClassModifier="internal"
+	mc:Ignorable="d"
+	d:DesignHeight="387"
+	d:DesignWidth="384"
+	Foreground="White"
+	Title="Page1">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="150" />
+			<RowDefinition />
+			<RowDefinition Height="100" />
+		</Grid.RowDefinitions>
+		<TextBlock
+			Margin="10"
+			TextAlignment="Center"
+			TextWrapping="Wrap"
+			Text="{x:Static ui:UI.P1Title}"
+			FontSize="23"
+			VerticalAlignment="Center">
+		</TextBlock>
+		<Grid
+			Height="208"
+			VerticalAlignment="Bottom"
+			Grid.Row="0"
+			Grid.RowSpan="2">
+		<Image
+			Source="pack://application:,,,/Assets/T80.png"
+			HorizontalAlignment="Right"
+			Height="60"
+			VerticalAlignment="Center"
+			Stretch="UniformToFill"
+			UseLayoutRounding="True"
+			ScrollViewer.VerticalScrollBarVisibility="Disabled"
+			IsHitTestVisible="False" />
+		</Grid>
+		<Button
+			Margin="10"
+			Grid.Row="2"
+			Content="{x:Static ui:UI.btGetStarted}"
+			Click="Button_Click" />
+
+	</Grid>
+</Page>

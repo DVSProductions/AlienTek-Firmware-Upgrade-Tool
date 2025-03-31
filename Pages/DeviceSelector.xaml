@@ -1,0 +1,74 @@
+﻿<Page
+	x:Class="AlienTek_Firmware_Upgrade_Tool.DeviceSelector"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:local="clr-namespace:AlienTek_Firmware_Upgrade_Tool"
+	x:ClassModifier="internal"
+	mc:Ignorable="d"
+	d:DesignHeight="387"
+	d:DesignWidth="384"
+	Foreground="White"
+	Title="Device_Selector">
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition />
+			<RowDefinition
+				Height="100" />
+		</Grid.RowDefinitions>
+
+		<local:FieldSet
+			Background="{DynamicResource BGColor}"
+			BorderBrush="{DynamicResource LightBlue}"
+			Header="{x:Static local:UI.DetectedDevices}"
+			Foreground="White"
+			Margin="10,10,10,0"
+			Grid.ColumnSpan="2">
+			<ListView
+				Background="{x:Null}"
+				BorderBrush="{x:Null}"
+				Foreground="White"
+				SelectionMode="Single"
+				Name="lvDevices"
+				DisplayMemberPath="Name">
+				<ListView.ItemContainerStyle>
+					<Style
+						TargetType="{x:Type ListViewItem}">
+						<Setter
+							Property="ToolTip">
+							<Setter.Value>
+								<TextBlock
+									Text="{Binding StatusInfo}" />
+							</Setter.Value>
+						</Setter>
+					</Style>
+				</ListView.ItemContainerStyle>
+			</ListView>
+
+		</local:FieldSet>
+		<Grid
+			Margin="10,10,10,10"
+			Grid.Row="1">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition />
+				<ColumnDefinition />
+			</Grid.ColumnDefinitions>
+			<Button
+				Name="btRefresh"
+				Grid.Row="1"
+				Content="{x:Static local:UI.btRefresh}"
+				Click="BtRefresh_Click"
+				Margin="0,0,5,0" />
+			<Button
+				Name="btNext"
+				Grid.Column="1"
+				Content="{x:Static local:UI.btNext}"
+				IsEnabled="False"
+				Click="BtNext_Click"
+				Margin="5,0,0,0" />
+
+		</Grid>
+	</Grid>
+</Page>

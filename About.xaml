@@ -1,0 +1,81 @@
+﻿<Window
+	x:Class="AlienTek_Firmware_Upgrade_Tool.About"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:local="clr-namespace:AlienTek_Firmware_Upgrade_Tool"
+	mc:Ignorable="d"
+	Background="{DynamicResource BGColor}"
+	Title="{x:Static local:UI.btAbout}"
+	SizeToContent="WidthAndHeight"
+	ResizeMode="NoResize"
+	WindowStartupLocation="CenterOwner"
+	WindowStyle="ToolWindow"
+	Foreground="White"
+	d:Height="174"
+	d:Width="401">
+	<Grid
+		Margin="5">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition
+				Width="Auto" />
+			<ColumnDefinition />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition
+				Height="Auto" />
+			<RowDefinition
+				Height="Auto" />
+			<RowDefinition
+				Height="Auto" />
+			<RowDefinition
+				Height="Auto" />
+		</Grid.RowDefinitions>
+		<Label
+			Grid.Column="1"
+			Content="{x:Static local:UI.AboutTitle}"
+			FontSize="20"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Top"
+			Margin="0,10,0,0" />
+		<TextBlock
+			Grid.Column="1"
+			Grid.Row="1"
+			VerticalAlignment="Center"
+			HorizontalAlignment="Center">
+			<Run
+				Text="{x:Static local:UI.AboutApp}" />
+			<Hyperlink
+				RequestNavigate="Hyperlink_RequestNavigate"
+				NavigateUri="https://github.com/DVSProductions">DVSProductions</Hyperlink>
+		</TextBlock>
+		<Image
+			Source="pack://application:,,,/Assets/Icon.png"
+			HorizontalAlignment="Left"
+			Stretch="Uniform"
+			UseLayoutRounding="True"
+			ScrollViewer.VerticalScrollBarVisibility="Disabled"
+			IsHitTestVisible="False"
+			Width="91"
+			Grid.RowSpan="2" />
+		<TextBlock
+			Grid.ColumnSpan="2"
+			Grid.Row="2"
+			TextWrapping="Wrap"
+			TextAlignment="Center"
+			MaxWidth="300"
+			Text="{x:Static local:UI.AboutProtocol}" />
+		<TextBlock
+			Grid.ColumnSpan="2"
+			Grid.Row="3"
+			TextWrapping="Wrap"
+			TextAlignment="Center">
+				<Run
+				Text="{x:Static local:UI.AboutVisit}" /> <Hyperlink
+				NavigateUri="https://www.alientek.com/"
+				RequestNavigate="Hyperlink_RequestNavigate">AlienTek</Hyperlink>
+		</TextBlock>
+
+	</Grid>
+</Window>

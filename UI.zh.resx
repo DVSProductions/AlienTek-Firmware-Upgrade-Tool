@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FirmwareInformationOK" xml:space="preserve">
+    <value>固件信息 OK</value>
+  </data>
+  <data name="FirmwareDownloadFailed" xml:space="preserve">
+    <value>固件下载失败</value>
+  </data>
+  <data name="FirmwareInformationAbnormality" xml:space="preserve">
+    <value>固件信息异常</value>
+  </data>
+  <data name="FlashingFailed" xml:space="preserve">
+    <value>刷机失败</value>
+  </data>
+  <data name="LoadingFirmware" xml:space="preserve">
+    <value>加载固件</value>
+  </data>
+  <data name="StartAbnormal" xml:space="preserve">
+    <value>开始异常</value>
+  </data>
+  <data name="StartOK" xml:space="preserve">
+    <value>开始 OK</value>
+  </data>
+  <data name="EndInstructionException" xml:space="preserve">
+    <value>结束指令异常</value>
+  </data>
+  <data name="EndOK" xml:space="preserve">
+    <value>结束 OK</value>
+  </data>
+  <data name="ExceptionGettingDeviceInformation" xml:space="preserve">
+    <value>获取设备信息异常</value>
+  </data>
+  <data name="GetDeviceInformationOK" xml:space="preserve">
+    <value>获取设备信息</value>
+  </data>
+  <data name="GetDeviceStatus" xml:space="preserve">
+    <value>获取设备状态 </value>
+  </data>
+  <data name="BootloaderReconnecting" xml:space="preserve">
+    <value>设备进入 Bootloader，重新连接中......</value>
+  </data>
+  <data name="FirmwareModelMismatch" xml:space="preserve">
+    <value>所选固件与此设备不兼容</value>
+  </data>
+  <data name="FailureReceivingDeviceInfo" xml:space="preserve">
+    <value>接收设备信息失败</value>
+  </data>
+  <data name="FirmwareFileNotFound" xml:space="preserve">
+    <value>未找到固件文件</value>
+  </data>
+  <data name="ConnectionNotOpen" xml:space="preserve">
+    <value>连接未打开。您是否断开了设备连接？</value>
+  </data>
+  <data name="BackBtn" xml:space="preserve">
+    <value>← 后退</value>
+  </data>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>AlienTek 固件升级</value>
+  </data>
+  <data name="UpgradeSuccessful" xml:space="preserve">
+    <value>固件升级成功！</value>
+  </data>
+  <data name="UpgradeFailed" xml:space="preserve">
+    <value>固件升级失败！</value>
+  </data>
+  <data name="btStartOver" xml:space="preserve">
+    <value>重新开始</value>
+  </data>
+  <data name="btRetry" xml:space="preserve">
+    <value>重试/查看日志</value>
+  </data>
+  <data name="DetectedDevices" xml:space="preserve">
+    <value>检测到的设备</value>
+  </data>
+  <data name="btRefresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="btNext" xml:space="preserve">
+    <value>下一个</value>
+  </data>
+  <data name="btFlashFirmware" xml:space="preserve">
+    <value>闪存固件</value>
+  </data>
+  <data name="btDownload" xml:space="preserve">
+    <value>从服务器下载升级</value>
+  </data>
+  <data name="btPickFile" xml:space="preserve">
+    <value>选择本地固件文件</value>
+  </data>
+  <data name="FileDialogFilename" xml:space="preserve">
+    <value>ATK 文件|*.atk</value>
+  </data>
+  <data name="ConntectedAs" xml:space="preserve">
+    <value>连接为</value>
+  </data>
+  <data name="via" xml:space="preserve">
+    <value>通过</value>
+  </data>
+  <data name="MSGTitleError" xml:space="preserve">
+    <value>提示</value>
+  </data>
+  <data name="DeviceNotConnected" xml:space="preserve">
+    <value>设备未连接或者已断开，请重新连接</value>
+  </data>
+  <data name="DataAnomalies" xml:space="preserve">
+    <value>数据异常</value>
+  </data>
+  <data name="GetDeviceInfoError" xml:space="preserve">
+    <value>获取设备信息时出错</value>
+  </data>
+  <data name="P1Title" xml:space="preserve">
+    <value>适用于 AlienTek T80 和 T80D 烙铁的固件升级工具</value>
+  </data>
+  <data name="btGetStarted" xml:space="preserve">
+    <value>开始</value>
+  </data>
+  <data name="ConnectionInstructionStep1" xml:space="preserve">
+    <value>1. 按住最靠近屏幕的按钮</value>
+  </data>
+  <data name="ConnectionInstructionStep2" xml:space="preserve">
+    <value>2. 使用数据线将烙铁连接到计算机</value>
+  </data>
+  <data name="P2Title" xml:space="preserve">
+    <value>连接设备</value>
+  </data>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>AlienTek 固件升级工具</value>
+  </data>
+  <data name="AboutApp" xml:space="preserve">
+    <value>应用程序编写者</value>
+  </data>
+  <data name="AboutProtocol" xml:space="preserve">
+    <value>底层协议的部分内容基于原始的 AlienTek 固件升级工具</value>
+  </data>
+  <data name="AboutVisit" xml:space="preserve">
+    <value>访问他们的网站</value>
+  </data>
+  <data name="btAbout" xml:space="preserve">
+    <value>关于</value>
+  </data>
+</root>
