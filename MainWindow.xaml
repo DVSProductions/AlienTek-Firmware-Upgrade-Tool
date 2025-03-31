@@ -32,6 +32,7 @@
 					Content="{x:Static local:UI.BackBtn}"
 					Click="Button_Click_2" />
 				<Button
+					Margin="0,1"
 					Content="{x:Static local:UI.btAbout}"
 					HorizontalAlignment="Right"
 					Click="Button_Click_3" />
